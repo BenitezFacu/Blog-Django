@@ -31,6 +31,18 @@
                 color: white !important;
             }
             
+            /* Enlaces de navegación en naranja */
+            .nav-links a {
+                color: #cc9966 !important;
+                text-decoration: none;
+                margin-right: 20px;
+                font-weight: bold;
+            }
+            
+            .nav-links a:hover {
+                color: #e6b380 !important;
+            }
+            
             /* Enlace Home en naranja */
             a[href*="blog_index"] {
                 color: #cc9966 !important;
@@ -43,7 +55,12 @@
     </head>
     <body>
         <h1 style="color: white !important;">Mi Skibidi Blog Personal</h1>
-        <a href="{% url "blog_index" %}" style="color: #cc9966 !important;">Home</a>
+        
+        <div class="nav-links" style="margin-bottom: 20px;">
+            <a href="/">← Volver al Portfolio</a>
+            <a href="{% url "blog_index" %}">Home Blog</a>
+        </div>
+        
         <hr style="border-color: #cc9966 !important;">
         {% block page_title %}{% endblock page_title %}
         {% block page_content %}{% endblock page_content %}

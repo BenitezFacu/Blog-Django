@@ -1,4 +1,3 @@
-# admin.py - COPIA Y PEGA COMPLETO
 from django.contrib import admin
 from .models import Comment, Post, Category
 
