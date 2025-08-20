@@ -1,0 +1,41 @@
+{% extends "blog/index.html" %}
+
+{% block page_title %}
+    <style>
+        /* Mismos estilos que index.html */
+        h1, h2 {
+            color: white !important;
+        }
+        
+        h3 a {
+            color: #cc9966 !important;
+            text-decoration: none !important;
+        }
+        
+        h3 a:hover {
+            color: #e6b380 !important;
+        }
+        
+        a[href*="blog_category"] {
+            color: #cc9966 !important;
+            text-decoration: none !important;
+        }
+        
+        a[href*="blog_category"]:hover {
+            color: #e6b380 !important;
+        }
+        
+        p, small, div {
+            color: white !important;
+        }
+        
+        a[href*="blog_index"] {
+            color: #cc9966 !important;
+        }
+        
+        a[href*="blog_index"]:hover {
+            color: #e6b380 !important;
+        }
+    </style>
+    <h2 style="color: white !important;">{{ category }}</h2>
+{% endblock page_title %}
