@@ -15,7 +15,7 @@ body {
 
 @font-face {
     font-family: 'Fuente';
-    src: url('Blog-django/Minecraft.ttf') format('truetype');
+    src: url('Minecraft.ttf') format('truetype');
   }  
 
 .a,
@@ -34,7 +34,7 @@ body {
 .tarjeta,
 .proyectos_contenedor h2,
 .footer{
-  font-family: "Fuente", minecraft;
+  font-family: "Fuente", sans-serif;
 }
 
 .bloque_1,

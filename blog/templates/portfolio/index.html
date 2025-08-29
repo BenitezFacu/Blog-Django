@@ -1,14 +1,15 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <title>index</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
     <header class="header">
-        <img src="static/img/logo.png" alt="logo" width="100" height="100">
+        <img src="{% static 'img/logo.png' %}" alt="logo" width="100" height="100">
         <label class="cambio_modo_oscuro">
           <input type="checkbox" id="toggle-dark">
           <span class="color"></span>
@@ -26,41 +27,43 @@
           <div class="texto-sobre-mi">
             <h1>¡Hola! Soy Benitez</h1>
             <p>Soy un apasionado de la programación, los videojuegos y los desafíos creativos. Me gusta construir cosas desde cero, aprender constantemente y compartir lo que sé con los demás.</p>
-            <a href="cv.pdf" download class="boton-cv">Descargar CV</a>
+            <a href="{% static 'pdf/cv.pdf' %}" download="CV_Benitez.pdf" class="boton-cv">
+                Descargar CV
+            </a>
           </div>
         </div>
         <div id="habilidades" class="bloque_2">
             <div class="logos">
               <div class="Python">
-                <img src="static/logos/python.png" alt="Python Logo" class="logo-img">
+                <img src="{% static 'logos/python.png' %}" alt="Python Logo" class="logo-img">
                 <div class="info-box">
                   <h3 class="titulo1">Python</h3>
                   <p class="a">Experiencia utilizando Python para desarrollar scripts automatizados, resolver problemas con lógica estructurada y crear aplicaciones orientadas al backend. También he trabajado con librerías como tkinter y pygame, y tengo nociones de inteligencia artificial y análisis de datos.</p>
                 </div>
               </div>
               <div class="HTML">
-                <img src="static/logos/html.png" alt="HTML Logo" class="logo-img">
+                <img src="{% static 'logos/html.png' %}" alt="HTML Logo" class="logo-img">
                 <div class="info-box">
                   <h3 class="titulo2">HTML</h3>
                   <p class="b">Es la base estructural de todos mis proyectos web. Lo utilizo para organizar el contenido de las páginas de forma semántica y accesible, aplicando buenas prácticas para lograr sitios bien estructurados y fácilmente mantenibles.</p>
                 </div>
               </div>
               <div class="CSS">
-                <img src="static/logos/css.png" alt="CSS Logo" class="logo-img">
+                <img src="{% static 'logos/css.png' %}" alt="CSS Logo" class="logo-img">
                 <div class="info-box">
                   <h3 class="titulo3">CSS</h3>
                   <p class="c">CSS para transformar estructuras básicas en diseños visualmente atractivos y responsivos. Trabajo con Flexbox, Grid y animaciones, cuidando tanto la estética como la experiencia de usuario en diferentes dispositivos.</p>
                 </div>
               </div>
               <div class="JavaScript">
-                <img src="static/logos/javascript.png" alt="JavaScript Logo" class="logo-img">
+                <img src="{% static 'logos/javascript.png' %}" alt="JavaScript Logo" class="logo-img">
                 <div class="info-box">
                   <h3 class="titulo4">JavaScript</h3>
                   <p class="d">JavaScript incorporo interactividad a mis sitios: menús dinámicos, animaciones, validaciones de formularios y lógica del lado del cliente. También tengo experiencia básica con DOM, eventos y efectos visuales.</p>
                 </div>
               </div>
               <div class="Github">
-                <img src="static/logos/github.png" alt="GitHub Logo" class="logo-img">
+                <img src="{% static 'logos/github.png' %}" alt="GitHub Logo" class="logo-img">
                 <div class="info-box">
                   <h3 class="titulo5">GitHub</h3>
                   <p class="e">Es mi herramienta principal para el control de versiones y la colaboración. Publico mis proyectos, gestiono cambios y mantengo repositorios organizados, aplicando buenas prácticas de documentación y trabajo en equipo.</p>
@@ -73,21 +76,21 @@
             <h2>Mis Proyectos</h2>
             <div class="tarjetas_proyecto">
               <div class="tarjeta">
-                <img src="static/img/sudoku.png" alt="Proyecto Sudoku">
+                <img src="{% static 'img/sudoku.png' %}" alt="Proyecto Sudoku">
                 <div class="contenido_tarjeta">
                   <p>El clásico juego de sudoku, cuenta con tres dificultades. Hecho con Python.</p>
                   <a href="https://github.com/BenitezFacu/Sudoku" class="link_tarjeta">🧩 Ver en GitHub</a>
                 </div>
               </div>
               <div class="tarjeta">
-                <img src="static/img/pasapalabras.png" alt="Proyecto Pasapalabra">
+                <img src="{% static 'img/pasapalabras.png' %}" alt="Proyecto Pasapalabra">
                 <div class="contenido_tarjeta">
                   <p>Juego de preguntas y respuestas inspirado en el programa "Pasapalabra". Hecho con Pygame</p>
                   <a href="https://github.com/BenitezFacu/Palabras-Huergo" class="link_tarjeta">🔤 Ver en GitHub</a>
                 </div>
               </div>
               <div class="tarjeta">
-                <img src="../img/space-invaders.jpg" alt="Proyecto Space Invaders">
+                <img src="{% static 'img/space-invaders.jpg' %}" alt="Proyecto Space Invaders">
                 <div class="contenido_tarjeta">
                   <p>Remake del clásico arcade con movimiento de nave, disparos y enemigos. Hecho con Pygame.</p>
                   <a href="https://github.com/BenitezFacu/Space-Invaders" class="link_tarjeta">👾 Ver en GitHub</a>
